@@ -11,8 +11,8 @@ border_color = #25232A 100
 # ID 2
 rounded = 1
 #WAL
-background_color = #C1ABBA 100
-background_color = #C1ABBA 100
+background_color = #D36E97 100
+background_color = #D36E97 100
 #ENDWAL
 
 # TASKBAR
@@ -25,7 +25,7 @@ panel_monitor = all
 panel_position = top center
 panel_size = 100% 25
 panel_margin = 0 0
-panel_padding = 7 0
+panel_padding = 7 1
 font_shadow = 0
 panel_background_id = 1
 wm_menu = 1

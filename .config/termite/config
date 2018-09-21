@@ -5,7 +5,7 @@ clickable_url = true
 dynamic_title = true
 font = Menlo 10
 #fullscreen = true
-#geometry = 640x480
+geometry = 480x320
 icon_name = terminal
 #mouse_autohide = false
 scroll_on_output = true
@@ -13,10 +13,13 @@ scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
 # and setting it to a negative value means "infinite scrollback"
 scrollback_lines = 10000
+
+scroll_on_keystroke = true
+scroll_on_output = true
+
 #search_wrap = true
 urgent_on_bell = false
-#hyperlinks = true
-
+hyperlinks = true
 # $BROWSER is used by default if set, with xdg-open as a fallback
 #browser = xdg-open
 
@@ -49,28 +52,10 @@ urgent_on_bell = false
 #background = #3f3f3f
 
 # 10% background transparency (requires a compositor)
-background = rgba(63, 63, 63, 0.9)
+background = rgba(63, 63, 63, 0.95)
 
 # If unset, will reverse foreground and background
 highlight = #2f2f2f
-
-# Colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
 
 [hints]
 #font = Monospace 12
@@ -81,6 +66,6 @@ color15 = #ffffff
 #padding = 2
 #border = #3f3f3f
 #border_width = 0.5
-#roundness = 2.0
+roundness = 2.0
 
 # vim: ft=dosini cms=#%s

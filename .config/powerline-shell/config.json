@@ -1,11 +1,10 @@
 {
-  "theme": "~/.config/powerline-shell/themes/default-red.py",  
+  "theme": "~/.config/powerline-shell/themes/basic-wal.py",  
   "segments": [
     "virtual_env",
     "username",
     "ssh",
     "cwd",
-    "git",
     "hg",
     "jobs"
   ]

@@ -9,7 +9,7 @@
 
 XDG_CONFIG_HOME="$HOME/.config"
 
-WALLP="$HOME/Pictures/Backgrounds"
+WALLP="$HOME/Pictures/Wallpapers"
 ######
 
 
@@ -81,13 +81,15 @@ alias ss='scrot -s ~/Pictures/$(timestamp).png'
 
 ### RICE ###
 
-# Wal with coloz backend
+# Wal with coloz backend, works best with dark colors
 alias walco='wal --backend colorz -i'
+# Wal with haishoku backend, works best with light colors
+alias walh='wal --backend haishoku -i'
 
 # Load Oomox with current wal theme
 alias walmox='wal -R -g'
 
 # Sync conky color with wal's
-alias walsync='$HOME/.scripts/apply-wal-colors.py'
+alias walsync='$HOME/.scripts/utils/apply-wal-colors.py'
 
 ######

@@ -4,7 +4,7 @@
 
 !.config
 !.config/*
-!.config/autostart/*
+.config/*.*
 !.config/compton/*
 !.config/conky/*
 !.config/htop/*

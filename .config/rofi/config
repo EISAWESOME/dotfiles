@@ -1,6 +1,6 @@
 rofi.combi-modi:    window,drun,ssh
 #rofi.theme:         arc-red-dark
-rofi.theme:	     ~/.cache/wal/colors-rofi-dark.rasi
+rofi.theme:	        ~/.cache/wal/colors-rofi-dark.rasi
 #rofi.show-icons:    true
-rofi.font:          DejaVuSans Mono 10
+rofi.font:          Menlo 10
 rofi.modi:          combi
