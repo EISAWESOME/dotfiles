@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# ./launch-bars.sh &&
+# Reload wal theme
+wal -R
+# Sync colors
+$HOME/.scripts/utils/apply-wal-colors.py tint2
+
+# Check every 5s if bar are running
+# Relaunch them if not running
+while [ true ] 
+do
+    # Check for polybar
+    if ! pgrep -x "polybar" > /dev/null 
+        then
+            # Stopped
+            (polybar -r top&)
+    fi
+
+    # Check for tint2
+    if ! pgrep -x "tint2" > /dev/null 
+        then
+            # Stopped
+            (tint2&)
+    fi
+
+    sleep 5s
+done
