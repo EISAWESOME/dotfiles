@@ -22,6 +22,6 @@
 !.scripts
 !.scripts/*
 !.scripts/*/*
-!.scripts/*/*/*
+!.scripts/bootstraping/*/*
 .scripts/*/*.old**
 
