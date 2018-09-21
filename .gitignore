@@ -22,4 +22,6 @@
 !.scripts
 !.scripts/*
 !.scripts/*/*
+!.scripts/*/*/*
+.scripts/*/*.old**
 
