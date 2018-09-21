@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Full Wal
+# Wal on a picture, then exec the refresh scripts
+
+wal --backend colorz -i $1 -g;
+/home/cs/.scripts/apply-wal-colors.sh;
+tint2&
+xfwm4 --replace
