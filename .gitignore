@@ -1,4 +1,5 @@
 *
+!README.md
 !.gitignore
 !.bashrc
 
@@ -7,21 +8,26 @@
 .config/*.*
 !.config/compton/*
 !.config/conky/*
-!.config/htop/*
+.config/conky/conky.conf.old
+#!.config/htop/**/*
 !.config/neofetch/*
 !.config/oomox/*
 !.config/polybar/*
-!.config/powerline-shell/*
+
+# !.config/powerline-shell/*
+
 !.config/rofi/*
 !.config/ranger/*
 !.config/termite/*
-!.config/tint2/*
+!.config/tint2/tint2rc
+.config/tint2/*.old
 !.config/wal/*
-!.config/xfce4/*
+!.config/openbox/*
 
 !.scripts
 !.scripts/*
 !.scripts/*/*
 !.scripts/bootstraping/*/*
-.scripts/*/*.old**
+
+**/*.old**
 

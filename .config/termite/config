@@ -2,10 +2,10 @@
 allow_bold = true
 #audible_bell = false
 clickable_url = true
-dynamic_title = true
-font = Menlo 10
+dynamic_title = false
+font = Hack 10
 #fullscreen = true
-geometry = 480x320
+#geometry = 480x320
 icon_name = terminal
 #mouse_autohide = false
 scroll_on_output = true
@@ -15,7 +15,7 @@ scroll_on_keystroke = true
 scrollback_lines = 10000
 
 scroll_on_keystroke = true
-scroll_on_output = true
+#scroll_on_output = true
 
 #search_wrap = true
 urgent_on_bell = false
@@ -66,6 +66,6 @@ highlight = #2f2f2f
 #padding = 2
 #border = #3f3f3f
 #border_width = 0.5
-roundness = 2.0
+#roundness = 2.0
 
 # vim: ft=dosini cms=#%s
