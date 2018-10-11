@@ -56,6 +56,7 @@ if("conky" in sys.argv):
                     line = re.sub(regex, replace, line)
                 #print(line)
                 fout.write(line)
+    print("Done!")
 
 #endregion
 
@@ -85,5 +86,6 @@ if ("tint2" in sys.argv):
                     line = re.sub(regex, replace, line)
                     # print(line)
                 fout.write(line)
+    print("Done!")
 
 #endregion

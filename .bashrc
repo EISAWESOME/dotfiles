@@ -8,6 +8,9 @@
 ### VARIABLES ###
 XDG_CONFIG_HOME="$HOME/.config"
 WALLP="$HOME/Pictures/Wallpapers"
+PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+
+PS1="\u \W \[\e[0;33m\]\$ \e[m"
 ######
 
 
@@ -50,9 +53,10 @@ alias rconky='killall conky && conky'
 alias code='code-git'
 
 # Switch sur la 4G
-alias 4g='sudo netctl stop-all && netctl start 4G-yare-yare'
+#alias 4g='sudo netctl stop-all && netctl start 4G-yare-yare'
+alias 4g='nmcli con up id 4g'
 # Wifi Bbox Oullins
-alias wifi-oullins='sudo netctl stop-all && netctl start oullins-bbox'
+#alias wifi-oullins='sudo netctl stop-all && netctl start oullins-bbox'
 ######
 
 ### SCREEN SHOT ###
@@ -67,15 +71,29 @@ alias ss='scrot -s ~/Pictures/$(timestamp).png'
 
 ### RICE ###
 
-# Wal with coloz backend, works best with dark colors
-alias walco='wal --backend colorz -i'
-# Wal with haishoku backend, works best with light colors
-alias walh='wal --backend haishoku -i'
-
 # Load Oomox with current wal theme
 alias walmox='wal -R -g'
 
 # Sync conky color with wal's
-alias walsync='$HOME/.scripts/utils/apply-wal-colors.py'
+alias walsync='$HOME/.scripts/utils/apply-wal-colors.py tint2 conky'
+
+# Wal with haishoku backend, works best with light colors
+function walh() {
+  wal -n -e --backend haishoku -i "$@"
+  feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
+  $HOME/.scripts/utils/apply-wal-colors.py tint2
+  killall tint2 && killall polybar
+  wal -R -g &> /dev/null
+}
+
+# Wal with colorz backend, works best with dark colors
+function walco() {
+  wal -n -e --backend colorz -i "$@"
+  feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
+  $HOME/.scripts/utils/apply-wal-colors.py tint2
+  killall tint2
+  killall polybar
+  wal -R -g &> /dev/null
+}
 
 ######
